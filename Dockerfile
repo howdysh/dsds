@@ -10,6 +10,6 @@ RUN usermod -a -G root howdout
 
 RUN usermod -a -G sudo howdout
 
-RUN service ssh start
+RUN sed -i 's/#Port 22/Port 2022/' /etc/ssh/sshd_config
  
 
