@@ -2,7 +2,7 @@ FROM ubuntu:20.04
 
 RUN apt update && apt-get update
 
-RUN apt install -y curl openssh-server
+RUN apt install -y unzip curl openssh-server
 
 RUN useradd -m -p 123456 howdout
 
